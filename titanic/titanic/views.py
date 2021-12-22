@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from . import fake_model
 from . import ml_predict
 
 def home(request):
