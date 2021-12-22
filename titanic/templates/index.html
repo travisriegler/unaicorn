@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Titanic Predictor</title>
+    </head>
+    <Body>
+        <h1>Home Page</h1>
+        <h3>Get your titanic prediction here!</h3>
+        <p>Enter the details of the made up person on the Titanic voyage</p>
+        <p>We wil output a prediction!</p>
+
+        <form action="{% url 'result' %}">
+            {% csrf_token %}
+            <input type="text" name="pclass" placeholder="pclass">
+            <input type="text" name="sex" placeholder="sex">
+            <input type="text" name="age" placeholder="age">
+            <input type="text" name="sibsp" placeholder="sibsp">
+            <input type="text" name="parch" placeholder="parch">
+            <input type="text" name="fare" placeholder="fare">
+            <input type="text" name="embarked" placeholder="embarked">
+            <input type="text" name="title" placeholder="title">
+            <input type="submit">
+        </form>
+    </Body>
+
+
+</html>
